@@ -14,4 +14,4 @@ In order to run the container the following environment variables need to be pas
 
 Then container launch would look like:
 
-``docker run -it --name=xl2tpd -e "VPN_IPSEC_PSK=[your_key]" -e "VPN_USER=[your)user]" -e "VPN_PASSWORD=[your_pass]" -e "VPN_PUBLIC_IP=[vpn_ip]" -e "VPN_LOCAL_IP=[host_ip]" -v /lib/modules:/lib/modules:ro -d --privileged    xl2tpd_client``
+``docker run -it --name=ipsec-vpn-client -e "VPN_IPSEC_PSK=[your_key]" -e "VPN_USER=[your)user]" -e "VPN_PASSWORD=[your_pass]" -e "VPN_PUBLIC_IP=[vpn_ip]" -e "VPN_LOCAL_IP=[host_ip]" -v /lib/modules:/lib/modules:ro -d --privileged    emmdim/ipsec-vpn-client``
