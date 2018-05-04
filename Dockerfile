@@ -11,7 +11,7 @@ RUN apt-get -yqq update \
          wget dnsutils openssl ca-certificates kmod \
          iproute gawk grep sed net-tools iptables \
          bsdmainutils libcurl3-nss \
-	 nano strongswan rsyslog
+	 nano strongswan rsyslog xl2tpd
 
 COPY ./run.sh /opt/src/run.sh
 RUN chmod 755 /opt/src/run.sh
