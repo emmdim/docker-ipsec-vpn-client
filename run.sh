@@ -124,6 +124,7 @@ conn myvpn
   leftprotoport=17/1701
   rightprotoport=17/1701
   right=$PUBLIC_IP
+  rightid=%any
 EOF
 
 cat > /etc/ipsec.secrets <<EOF
