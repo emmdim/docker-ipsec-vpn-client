@@ -11,10 +11,12 @@ RUN apt-get -yqq update \
          wget dnsutils openssl ca-certificates kmod \
          iproute gawk grep sed net-tools iptables \
          bsdmainutils libcurl3-nss \
-	 nano strongswan xl2tpd rsyslog
+	 nano strongswan rsyslog
 
 COPY ./run.sh /opt/src/run.sh
 RUN chmod 755 /opt/src/run.sh
+
+COPY ./xl2tpd-1.3.8_pacthed_amd64.deb /opt/src/xl2tpd-1.3.8_pacthed_amd64.deb
 
 VOLUME ["/lib/modules"]
 
