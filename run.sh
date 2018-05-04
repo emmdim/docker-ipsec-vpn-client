@@ -19,7 +19,7 @@
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
-dpkg -i /opt/src/xl2tpd-1.3.8_pacthed_amd64.deb
+dpkg -i /opt/src/xl2tpd_1.3.11-1_amd64.deb
 
 exiterr()  { echo "Error: $1" >&2; exit 1; }
 nospaces() { printf '%s' "$1" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'; }
