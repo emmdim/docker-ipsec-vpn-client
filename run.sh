@@ -189,6 +189,8 @@ EOF
 mkdir -p /var/run/xl2tpd
 touch /var/run/xl2tpd/l2tp-control
 
+service rsyslog restart
+
 #Restart services:
 service ipsec restart
 service xl2tpd restart
